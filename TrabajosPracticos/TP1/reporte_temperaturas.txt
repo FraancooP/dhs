@@ -1,0 +1,126 @@
+Reporte de temperaturas máximas y mínimas por estación:
+----------------------------------------: Máxima = Sin datos, Mínima = Sin datos
+AEROPARQUE AERO: Máxima = 36.3, Mínima = 1.5
+AZUL AERO: Máxima = 38.1, Mínima = -7.7
+BAHIA BLANCA AERO: Máxima = 39.3, Mínima = -6.6
+BARILOCHE AERO: Máxima = 33.4, Mínima = -13.9
+BASE BELGRANO II: Máxima = 5.9, Mínima = -36.1
+BASE CARLINI (EX JUBANY): Máxima = 10.0, Mínima = -12.4
+BASE ESPERANZA: Máxima = 14.7, Mínima = -22.5
+BASE MARAMBIO: Máxima = 14.1, Mínima = -27.7
+BASE ORCADAS: Máxima = 10.1, Mínima = -23.5
+BASE SAN MARTIN: Máxima = 8.7, Mínima = -23.3
+BENITO JUAREZ: Máxima = 37.0, Mínima = -7.3
+BERNARDO DE IRIGOYEN AERO: Máxima = 33.1, Mínima = -1.2
+BOLIVAR AERO: Máxima = 38.5, Mínima = -8.0
+BUENOS AIRES OBSERVATORIO: Máxima = 38.5, Mínima = -1.9
+CAMPO DE MAYO AERO: Máxima = 38.0, Mínima = -6.7
+CATAMARCA AERO: Máxima = 42.7, Mínima = -6.2
+CERES AERO: Máxima = 33.6, Mínima = -4.5
+CHAMICAL AERO: Máxima = 28.0, Mínima = -3.6
+CHAPELCO AERO: Máxima = 34.6, Mínima = -15.0
+CHEPES: Máxima = 41.5, Mínima = -6.6
+COMODORO RIVADAVIA AERO: Máxima = 37.1, Mínima = -6.3
+CONCORDIA AERO: Máxima = 41.8, Mínima = -5.2
+CORDOBA AERO: Máxima = 40.5, Mínima = -8.1
+CORDOBA OBSERVATORIO: Máxima = 42.2, Mínima = -3.4
+CORONEL SUAREZ AERO: Máxima = 36.4, Mínima = -10.3
+CORRIENTES AERO: Máxima = 41.4, Mínima = -0.5
+DOLORES AERO: Máxima = 28.8, Mínima = -3.9
+EL BOLSON AERO: Máxima = 36.1, Mínima = -10.5
+EL CALAFATE AERO: Máxima = 27.4, Mínima = -14.1
+EL PALOMAR AERO: Máxima = 38.0, Mínima = -7.4
+ESCUELA DE AVIACION MILITAR AERO: Máxima = Sin datos, Mínima = -7.0
+ESQUEL AERO: Máxima = 33.7, Mínima = -18.2
+EZEIZA AERO: Máxima = 38.5, Mínima = -4.6
+FORMOSA AERO: Máxima = 41.5, Mínima = 1.4
+GENERAL PICO AERO: Máxima = 39.6, Mínima = -8.0
+GOBERNADOR GREGORES AERO: Máxima = 34.5, Mínima = -14.0
+GUALEGUAYCHU AERO: Máxima = 39.3, Mínima = -6.4
+IGUAZU AERO: Máxima = 37.3, Mínima = -1.2
+ITUZAINGO: Máxima = 40.5, Mínima = 0.3
+JACHAL: Máxima = 39.6, Mínima = -8.1
+JUJUY AERO: Máxima = 38.7, Mínima = -2.8
+JUJUY U N: Máxima = 37.0, Mínima = -1.5
+JUNIN AERO: Máxima = 37.6, Mínima = -8.0
+LA PLATA AERO: Máxima = 38.1, Mínima = -5.2
+LA QUIACA OBSERVATORIO: Máxima = 27.1, Mínima = -10.2
+LA RIOJA AERO: Máxima = 45.0, Mínima = -5.0
+LABOULAYE AERO: Máxima = 38.5, Mínima = -7.1
+LAS FLORES: Máxima = 39.5, Mínima = -3.6
+LAS LOMITAS: Máxima = 42.8, Mínima = 0.0
+MALARGUE AERO: Máxima = 36.6, Mínima = -16.0
+MAQUINCHAO: Máxima = 39.0, Mínima = -19.2
+MAR DEL PLATA AERO: Máxima = 39.9, Mínima = -6.3
+MARCOS JUAREZ AERO: Máxima = 39.2, Mínima = -8.0
+MARIANO MORENO AERO: Máxima = Sin datos, Mínima = -5.5
+MENDOZA AERO: Máxima = 37.4, Mínima = -6.7
+MENDOZA OBSERVATORIO: Máxima = Sin datos, Mínima = -6.0
+MERCEDES AERO (CTES): Máxima = 41.0, Mínima = -1.8
+MERLO AERO: Máxima = 33.9, Mínima = -4.0
+METAN: Máxima = 40.0, Mínima = -0.4
+MONTE CASEROS AERO: Máxima = 40.6, Mínima = -1.9
+MORON AERO: Máxima = 38.0, Mínima = -4.9
+NEUQUEN AERO: Máxima = 42.1, Mínima = -11.0
+NUEVE DE JULIO: Máxima = 38.2, Mínima = -3.8
+OBERA: Máxima = 37.0, Mínima = -1.5
+OLAVARRIA AERO: Máxima = 37.7, Mínima = -6.7
+ORAN AERO: Máxima = 41.0, Mínima = 1.9
+PARANA AERO: Máxima = 38.7, Mínima = -3.5
+PASO DE INDIOS: Máxima = 37.7, Mínima = -12.4
+PASO DE LOS LIBRES AERO: Máxima = 41.7, Mínima = -0.6
+PEHUAJO AERO: Máxima = 38.7, Mínima = -5.1
+PERITO MORENO AERO: Máxima = 31.2, Mínima = -14.6
+PIGUE AERO: Máxima = 36.5, Mínima = -6.8
+PILAR OBSERVATORIO: Máxima = 41.2, Mínima = -4.0
+POSADAS AERO: Máxima = 39.0, Mínima = 1.2
+PRESIDENCIA ROQUE SAENZ PEÑA AERO: Máxima = 42.6, Mínima = -4.5
+PUERTO DESEADO AERO: Máxima = 35.0, Mínima = -11.5
+PUERTO MADRYN AERO: Máxima = 42.3, Mínima = -11.6
+PUNTA INDIO B.A.: Máxima = 35.0, Mínima = -3.5
+RAFAELA AERO: Máxima = 42.0, Mínima = -4.2
+RECONQUISTA AERO: Máxima = 43.7, Mínima = -1.4
+RESISTENCIA AERO: Máxima = 43.3, Mínima = -2.2
+RIO CUARTO AERO: Máxima = 27.6, Mínima = -7.2
+RIO GALLEGOS AERO: Máxima = 27.6, Mínima = -13.6
+RIO GRANDE B.A.: Máxima = 22.6, Mínima = -8.8
+RIVADAVIA: Máxima = 46.5, Mínima = 1.3
+ROSARIO AERO: Máxima = 39.5, Mínima = -6.8
+SALTA AERO: Máxima = 37.5, Mínima = -5.3
+SAN ANTONIO OESTE AERO: Máxima = 24.6, Mínima = -10.4
+SAN FERNANDO AERO: Máxima = 37.9, Mínima = -5.1
+SAN JUAN AERO: Máxima = 44.0, Mínima = -8.0
+SAN JULIAN AERO: Máxima = 37.0, Mínima = -11.3
+SAN LUIS AERO: Máxima = 40.7, Mínima = -6.7
+SAN MARTIN (MZA): Máxima = 42.7, Mínima = -5.9
+SAN RAFAEL AERO: Máxima = 39.5, Mínima = -8.4
+SANTA CRUZ AERO: Máxima = 34.3, Mínima = -9.3
+SANTA ROSA AERO: Máxima = 41.4, Mínima = -7.3
+SANTA ROSA DE CONLARA AERO: Máxima = 40.6, Mínima = -11.8
+SANTIAGO DEL ESTERO AERO: Máxima = 44.2, Mínima = -3.5
+SAUCE VIEJO AERO: Máxima = 40.9, Mínima = -7.0
+SUNCHALES AERO: Máxima = 42.5, Mínima = -4.7
+TANDIL AERO: Máxima = 37.7, Mínima = -8.1
+TARTAGAL AERO: Máxima = 39.1, Mínima = -1.0
+TERMAS DE RIO HONDO AERO: Máxima = 42.7, Mínima = -3.0
+TINOGASTA: Máxima = 41.6, Mínima = -8.5
+TRELEW AERO: Máxima = 43.6, Mínima = -13.2
+TRENQUE LAUQUEN: Máxima = 38.5, Mínima = -5.1
+TRES ARROYOS: Máxima = 36.8, Mínima = -5.0
+TUCUMAN AERO: Máxima = 41.7, Mínima = -0.6
+USHUAIA AERO: Máxima = 19.1, Mínima = -4.8
+USPALLATA: Máxima = 36.7, Mínima = -11.2
+VENADO TUERTO AERO: Máxima = 37.2, Mínima = -8.0
+VICTORICA: Máxima = 41.1, Mínima = -11.0
+VIEDMA AERO: Máxima = 36.6, Mínima = -5.4
+VILLA DE MARIA DEL RIO SECO: Máxima = 42.2, Mínima = -8.4
+VILLA DOLORES AERO: Máxima = 40.8, Mínima = -8.4
+VILLA GESELL AERO: Máxima = 39.1, Mínima = -6.4
+VILLA REYNOLDS AERO: Máxima = 41.0, Mínima = -12.7
+CHILECITO AERO: Máxima = 38.2, Mínima = -5.0
+
+Mayor amplitud térmica: 35.6°C en JACHAL (día 309)
+Menor amplitud térmica: 0.7°C en BASE CARLINI (EX JUBANY) (día 263)
+
+Máxima diferencia de temperatura entre dos estaciones en un mismo día: 77.0°C entre BASE BELGRANO II (tmin) (-34.2°C) y LAS LOMITAS (tmax) (42.8°C) en el día 315
+Mínima diferencia de temperatura entre dos estaciones en un mismo día: 0.09999999999999432°C entre FORMOSA AERO (tmax) (34.2°C) y PASO DE LOS LIBRES AERO (tmax) (34.3°C) en el día 141
