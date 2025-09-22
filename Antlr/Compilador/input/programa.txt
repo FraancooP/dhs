@@ -1,4 +1,27 @@
-if(a){
-    x = y;
-}else
-    x = j;
+int x = 5;
+int y = 4 + x * 10;
+int a, b, c, d, e;
+
+for (y = 0; y < 10; ++y) {
+    x = 0;
+}
+
+if (a) {
+    x = a;
+}
+
+while (a) {
+    x = a;
+    y = 10;
+}
+
+while (x)
+    x = x;
+
+
+double xyz;
+int x;
+
+x = 0;
+temp = xyz;
+a = 10;

@@ -5,7 +5,7 @@ from compiladoresLexer  import compiladoresLexer
 
 
 def main(argv):
-    archivo = "input/entrada.txt"
+    archivo = "input/operaciones.txt"
     if len(argv) > 1 :
         archivo = argv[1]
     input = FileStream(archivo)
