@@ -26,12 +26,66 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by compiladorParser#instruccion.
+    def enterInstruccion(self, ctx:compiladorParser.InstruccionContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#instruccion.
+    def exitInstruccion(self, ctx:compiladorParser.InstruccionContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#bloque.
+    def enterBloque(self, ctx:compiladorParser.BloqueContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#bloque.
+    def exitBloque(self, ctx:compiladorParser.BloqueContext):
+        pass
+
+
     # Enter a parse tree produced by compiladorParser#tipo.
     def enterTipo(self, ctx:compiladorParser.TipoContext):
         pass
 
     # Exit a parse tree produced by compiladorParser#tipo.
     def exitTipo(self, ctx:compiladorParser.TipoContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#declaracion.
+    def enterDeclaracion(self, ctx:compiladorParser.DeclaracionContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#declaracion.
+    def exitDeclaracion(self, ctx:compiladorParser.DeclaracionContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#listaDeclaradores.
+    def enterListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#listaDeclaradores.
+    def exitListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#listaOpal.
+    def enterListaOpal(self, ctx:compiladorParser.ListaOpalContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#listaOpal.
+    def exitListaOpal(self, ctx:compiladorParser.ListaOpalContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#declarador.
+    def enterDeclarador(self, ctx:compiladorParser.DeclaradorContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#declarador.
+    def exitDeclarador(self, ctx:compiladorParser.DeclaradorContext):
         pass
 
 
@@ -89,78 +143,6 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by compiladorParser#codigo.
-    def enterCodigo(self, ctx:compiladorParser.CodigoContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#codigo.
-    def exitCodigo(self, ctx:compiladorParser.CodigoContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#declaracion.
-    def enterDeclaracion(self, ctx:compiladorParser.DeclaracionContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#declaracion.
-    def exitDeclaracion(self, ctx:compiladorParser.DeclaracionContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#listaDeclaradores.
-    def enterListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#listaDeclaradores.
-    def exitListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#declarador.
-    def enterDeclarador(self, ctx:compiladorParser.DeclaradorContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#declarador.
-    def exitDeclarador(self, ctx:compiladorParser.DeclaradorContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#listaAsignaciones.
-    def enterListaAsignaciones(self, ctx:compiladorParser.ListaAsignacionesContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#listaAsignaciones.
-    def exitListaAsignaciones(self, ctx:compiladorParser.ListaAsignacionesContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#listaContadores.
-    def enterListaContadores(self, ctx:compiladorParser.ListaContadoresContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#listaContadores.
-    def exitListaContadores(self, ctx:compiladorParser.ListaContadoresContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#contador.
-    def enterContador(self, ctx:compiladorParser.ContadorContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#contador.
-    def exitContador(self, ctx:compiladorParser.ContadorContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#bloque.
-    def enterBloque(self, ctx:compiladorParser.BloqueContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#bloque.
-    def exitBloque(self, ctx:compiladorParser.BloqueContext):
-        pass
-
-
     # Enter a parse tree produced by compiladorParser#comparacion.
     def enterComparacion(self, ctx:compiladorParser.ComparacionContext):
         pass
@@ -170,12 +152,39 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by compiladorParser#instruccion.
-    def enterInstruccion(self, ctx:compiladorParser.InstruccionContext):
+    # Enter a parse tree produced by compiladorParser#asignacion.
+    def enterAsignacion(self, ctx:compiladorParser.AsignacionContext):
         pass
 
-    # Exit a parse tree produced by compiladorParser#instruccion.
-    def exitInstruccion(self, ctx:compiladorParser.InstruccionContext):
+    # Exit a parse tree produced by compiladorParser#asignacion.
+    def exitAsignacion(self, ctx:compiladorParser.AsignacionContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#expresionLogica.
+    def enterExpresionLogica(self, ctx:compiladorParser.ExpresionLogicaContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#expresionLogica.
+    def exitExpresionLogica(self, ctx:compiladorParser.ExpresionLogicaContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#logica.
+    def enterLogica(self, ctx:compiladorParser.LogicaContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#logica.
+    def exitLogica(self, ctx:compiladorParser.LogicaContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#listaAsignaciones.
+    def enterListaAsignaciones(self, ctx:compiladorParser.ListaAsignacionesContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#listaAsignaciones.
+    def exitListaAsignaciones(self, ctx:compiladorParser.ListaAsignacionesContext):
         pass
 
 
@@ -206,42 +215,6 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by compiladorParser#asignacion.
-    def enterAsignacion(self, ctx:compiladorParser.AsignacionContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#asignacion.
-    def exitAsignacion(self, ctx:compiladorParser.AsignacionContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#retorno.
-    def enterRetorno(self, ctx:compiladorParser.RetornoContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#retorno.
-    def exitRetorno(self, ctx:compiladorParser.RetornoContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#sumar.
-    def enterSumar(self, ctx:compiladorParser.SumarContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#sumar.
-    def exitSumar(self, ctx:compiladorParser.SumarContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#restar.
-    def enterRestar(self, ctx:compiladorParser.RestarContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#restar.
-    def exitRestar(self, ctx:compiladorParser.RestarContext):
-        pass
-
-
     # Enter a parse tree produced by compiladorParser#ifor.
     def enterIfor(self, ctx:compiladorParser.IforContext):
         pass
@@ -260,21 +233,93 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by compiladorParser#forCond.
-    def enterForCond(self, ctx:compiladorParser.ForCondContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#forCond.
-    def exitForCond(self, ctx:compiladorParser.ForCondContext):
-        pass
-
-
     # Enter a parse tree produced by compiladorParser#forInc.
     def enterForInc(self, ctx:compiladorParser.ForIncContext):
         pass
 
     # Exit a parse tree produced by compiladorParser#forInc.
     def exitForInc(self, ctx:compiladorParser.ForIncContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#listaContadores.
+    def enterListaContadores(self, ctx:compiladorParser.ListaContadoresContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#listaContadores.
+    def exitListaContadores(self, ctx:compiladorParser.ListaContadoresContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#prototipoDeFuncion.
+    def enterPrototipoDeFuncion(self, ctx:compiladorParser.PrototipoDeFuncionContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#prototipoDeFuncion.
+    def exitPrototipoDeFuncion(self, ctx:compiladorParser.PrototipoDeFuncionContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#declaracionDeFuncion.
+    def enterDeclaracionDeFuncion(self, ctx:compiladorParser.DeclaracionDeFuncionContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#declaracionDeFuncion.
+    def exitDeclaracionDeFuncion(self, ctx:compiladorParser.DeclaracionDeFuncionContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#llamadaFuncion.
+    def enterLlamadaFuncion(self, ctx:compiladorParser.LlamadaFuncionContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#llamadaFuncion.
+    def exitLlamadaFuncion(self, ctx:compiladorParser.LlamadaFuncionContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#retorno.
+    def enterRetorno(self, ctx:compiladorParser.RetornoContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#retorno.
+    def exitRetorno(self, ctx:compiladorParser.RetornoContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#parametro.
+    def enterParametro(self, ctx:compiladorParser.ParametroContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#parametro.
+    def exitParametro(self, ctx:compiladorParser.ParametroContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#parametros.
+    def enterParametros(self, ctx:compiladorParser.ParametrosContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#parametros.
+    def exitParametros(self, ctx:compiladorParser.ParametrosContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#argumentos.
+    def enterArgumentos(self, ctx:compiladorParser.ArgumentosContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#argumentos.
+    def exitArgumentos(self, ctx:compiladorParser.ArgumentosContext):
+        pass
+
+
+    # Enter a parse tree produced by compiladorParser#llamadaFuncionInstruccion.
+    def enterLlamadaFuncionInstruccion(self, ctx:compiladorParser.LlamadaFuncionInstruccionContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#llamadaFuncionInstruccion.
+    def exitLlamadaFuncionInstruccion(self, ctx:compiladorParser.LlamadaFuncionInstruccionContext):
         pass
 
 

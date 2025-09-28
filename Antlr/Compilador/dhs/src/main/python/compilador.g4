@@ -1,7 +1,10 @@
 grammar compilador;
 
+// ===== TOKENS LEXICOS =====
 fragment LETRA : [A-Za-z] ;
 fragment DIGITO : [0-9] ;
+
+// Símbolos
 PA : '(' ;
 PC : ')' ;
 LLA : '{' ;
@@ -21,9 +24,13 @@ MENORIGUAL : '<=' ;
 MAYORIGUAL : '>=' ;
 IGUAL : '==' ;
 DIFERENTE : '!=' ;
-//Fragmentes para definir partes de tokens que no se usan directamente
+AND : '&&' ;
+OR : '||' ;
+NOT : '!' ;
+INCREMENT : '++' ;
+DECREMENT : '--' ;
 
-NUMERO : ('+' | '-')? DIGITO+ ;
+// Palabras reservadas
 INT : 'int' ;
 DOUBLE : 'double' ;
 IF : 'if' ;
@@ -32,139 +39,146 @@ FOR : 'for' ;
 WHILE : 'while' ;
 RETURN : 'return' ;
 
+// Literales
+NUMERO : ('+' | '-')? DIGITO+ ;
 ID : (LETRA | '_')(LETRA | DIGITO | '_')* ;
 WS : [ \t\r\n] -> skip ;
 OTRO : . ;
+
+// ===== ESTRUCTURA GENERAL DEL PROGRAMA =====
 programa : instrucciones EOF ;
 
 instrucciones : instruccion instrucciones 
               |
               ;
+
+instruccion : asignacion PYC
+           | declaracion
+           | iwhile
+           | bloque
+           | iif
+           | ifor
+           | declaracionDeFuncion
+           | prototipoDeFuncion
+           | llamadaFuncionInstruccion
+           | retorno
+           ;
+
+bloque : LLA instrucciones LLC ;
+
+// ===== TIPOS Y DECLARACIONES =====
 tipo : INT
      | DOUBLE
      ;
-//Aritmetica 
-opal : exp  
-     ;
-
-//Sumatoria de cosas
-exp  : term  e ;
-
-e    : SUMA term e
-     | RESTA term e
-     |  
-     ;
-//Producto de cosas
-//estamos cumpliendo con la precedencia de operadores
-term : factor t ;
-
-t    : MULT factor t
-     | DIV factor t
-     |   
-     ;
-
-//falta agregar llamada a funcion!!
-//ademas, la resta y la division van a salir mal cuando
-//volvemos del arbol
-factor : PA exp PC
-       | ID
-       | NUMERO
-       ;
-
-
-
-
-
-
-     
-
-
-codigo : NUMERO ;
 
 declaracion : tipo listaDeclaradores PYC ;
 
 listaDeclaradores : declarador (COMA declarador)* ;
 
+listaOpal : opal (COMA opal)* ;
+
 declarador : ID
            | ID ASIG opal
-           ;
-listaAsignaciones : asignacion (COMA asignacion)* //Eto no ta bueno
-                 |
-                 ;
-
-
-listaContadores : contador (COMA contador)* //Eto no ta bueno
-                |
-                ;
-
-contador : ID SUMA
-         | ID RESTA
-         | ID ASIG opal
-         ;
-
-     
-bloque : LLA instrucciones LLC ;
-comparacion : opal (SUMA | RESTA | MULT | DIV) opal ;
-instruccion:  asignacion PYC
-           |  declaracion
-           |  retorno
-           |  sumar
-           |  restar
-           |  iwhile
-           |  bloque
-           |  iif
-           |  ifor
+           | ID CA NUMERO CC
+           | ID CA NUMERO CC ASIG LLA listaOpal LLC
            ;
 
-iwhile : WHILE PA opal PC instruccion  ;
-iif : IF PA opal PC instruccion ielse ;
-ielse : ELSE instruccion
-      | 
-      ;
-//declaracion : tipo ID PYC ;
-asignacion : ID ASIG opal;
-retorno : RETURN codigo PYC ;
-sumar : ID ASIG ID SUMA opal PYC ;
-restar : ID ASIG ID RESTA opal PYC ;
+// ===== EXPRESIONES ARITMÉTICAS =====
+opal : exp ;
 
+exp : term e ;
 
+e : SUMA term e
+  | RESTA term e
+  |
+  ;
 
+term : factor t ;
 
+t : MULT factor t
+  | DIV factor t
+  |
+  ;
 
-//Implementacion de for:
-ifor : FOR PA forInit PYC forCond PYC forInc PC bloque  ;
+factor : PA exp PC
+       | ID
+       | ID CA opal CC
+       | NUMERO
+       | llamadaFuncion
+       ;
 
-forInit : listaAsignaciones
-         |  
-         ;
+// ===== COMPARACIONES =====
+comparacion : opal (MENOR | MAYOR | MENORIGUAL | MAYORIGUAL | IGUAL | DIFERENTE) opal ;
 
-forCond : comparacion
-         |  
-         ;
+// ===== ASIGNACIONES =====
+asignacion : ID ASIG opal
+           | INCREMENT ID
+           | DECREMENT ID
+           | ID INCREMENT
+           | ID DECREMENT
+           ;
 
-forInc: listaContadores
-       |  
+           // ===== EXPRESIONES LÓGICAS =====
+expresionLogica : comparacion logica ;
+
+logica : AND comparacion logica
+       | OR comparacion logica
+       |
        ;
 
 
+listaAsignaciones : asignacion (COMA asignacion)* 
+                  |
+                  ;
 
 
-//Analizador sintactico descendente: desde raiz hasta las hojas.
-//s:s(s)s
-// |
-//Internamente se arma una tabla donde se arranca con el simbolo inciial y del otro lado la entrada.
-//$s      (())()$
-//D -> derivar (Deriva desde el simbolo inicial)
-//M -> match
-//$s      (())()$D
-//$s)s(   (())()$M
-//$s)s    ())()$D
-//$s)s)s( ())()$M
-//$s)s)s  ))()$D
-//$s)s)    ))()$M
-//$s)s     )()$D
-//$s)      )()$M
-//$s       ()$D
-//$s)s)       ()$M
-//$s        $D
-//$         $ (Fin de cadena)
+
+// ===== ESTRUCTURAS DE CONTROL =====
+
+// While
+iwhile : WHILE PA expresionLogica PC instruccion ;
+
+// If-Else
+iif : IF PA expresionLogica PC instruccion ielse ;
+ielse : ELSE instruccion
+      | 
+      ;
+
+// For
+ifor : FOR PA forInit PYC expresionLogica PYC forInc PC bloque ;
+
+forInit : listaAsignaciones
+        |  
+        ;
+
+forInc : listaContadores
+       |  
+       ;
+
+listaContadores : asignacion (COMA asignacion)*
+                |
+                ;
+
+// ===== FUNCIONES =====
+prototipoDeFuncion : tipo ID PA parametros PC PYC ;
+
+declaracionDeFuncion : tipo ID PA parametros PC bloque ;
+
+
+llamadaFuncion : ID PA argumentos PC;
+
+retorno : RETURN opal PYC
+        | RETURN PYC
+        ;
+
+parametro : tipo ID ;
+
+parametros : parametro (COMA parametro)*
+           |                    
+           ;
+
+argumentos : opal (COMA opal)*
+           |                    
+           ;
+
+llamadaFuncionInstruccion : llamadaFuncion PYC;

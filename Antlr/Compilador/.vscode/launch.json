@@ -17,6 +17,7 @@
             // Simbolo inicial
             // "startRule": "exp",
             "startRule": "programa",
+            //"startRule": "declaracionDeFuncion",
             // Muestra Arbol Sintactico
             "printParseTree": true,
             "visualParseTree": true
