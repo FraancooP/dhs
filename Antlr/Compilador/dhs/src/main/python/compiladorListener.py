@@ -1,6 +1,6 @@
-# Generated from compilador.g4 by ANTLR 4.9.2
+# Generated from /home/franco/Escritorio/Facultad/DHS/Antlr/Compilador/dhs/src/main/python/compilador.g4 by ANTLR 4.13.1
 from antlr4 import *
-if __name__ is not None and "." in __name__:
+if "." in __name__:
     from .compiladorParser import compiladorParser
 else:
     from compiladorParser import compiladorParser

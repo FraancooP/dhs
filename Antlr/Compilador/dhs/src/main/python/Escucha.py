@@ -212,9 +212,9 @@ class Escucha (compiladorListener) :
             return  # No se pudo inferir el tipo
         
         if tipo_declarado == "int" and tipo_valor == "double":
-            print(f"❌ ERROR SEMÁNTICO: No se puede asignar 'double' a variable 'int' '{nombre}' (línea {linea})")
+            print(f"ERROR SEMÁNTICO: No se puede asignar 'double' a variable 'int' '{nombre}' (línea {linea})")
         elif tipo_declarado == "double" and tipo_valor == "int":
-            print(f"⚠️  WARNING: Conversión implícita de 'int' a 'double' en variable '{nombre}' (línea {linea})")
+            print(f" WARNING: Conversión implícita de 'int' a 'double' en variable '{nombre}' (línea {linea})")
     
     def inferir_tipo_expresion(self, opal_ctx):
         """Infiere el tipo de una expresión desde opal"""
