@@ -1,6 +1,6 @@
-# Generated from /home/franco/Escritorio/Facultad/DHS/Antlr/Compilador/dhs/src/main/python/compilador.g4 by ANTLR 4.13.1
+# Generated from compilador.g4 by ANTLR 4.9.2
 from antlr4 import *
-if "." in __name__:
+if __name__ is not None and "." in __name__:
     from .compiladorParser import compiladorParser
 else:
     from compiladorParser import compiladorParser
@@ -34,23 +34,23 @@ class compiladorVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by compiladorParser#inic.
+    def visitInic(self, ctx:compiladorParser.InicContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by compiladorParser#declaracion.
     def visitDeclaracion(self, ctx:compiladorParser.DeclaracionContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by compiladorParser#listaDeclaradores.
-    def visitListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
+    # Visit a parse tree produced by compiladorParser#listavar.
+    def visitListavar(self, ctx:compiladorParser.ListavarContext):
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by compiladorParser#listaOpal.
     def visitListaOpal(self, ctx:compiladorParser.ListaOpalContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by compiladorParser#declarador.
-    def visitDeclarador(self, ctx:compiladorParser.DeclaradorContext):
         return self.visitChildren(ctx)
 
 
@@ -96,11 +96,6 @@ class compiladorVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by compiladorParser#expresionLogica.
     def visitExpresionLogica(self, ctx:compiladorParser.ExpresionLogicaContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by compiladorParser#logica.
-    def visitLogica(self, ctx:compiladorParser.LogicaContext):
         return self.visitChildren(ctx)
 
 

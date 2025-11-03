@@ -1,6 +1,6 @@
-# Generated from /home/franco/Escritorio/Facultad/DHS/Antlr/Compilador/dhs/src/main/python/compilador.g4 by ANTLR 4.13.1
+# Generated from compilador.g4 by ANTLR 4.9.2
 from antlr4 import *
-if "." in __name__:
+if __name__ is not None and "." in __name__:
     from .compiladorParser import compiladorParser
 else:
     from compiladorParser import compiladorParser
@@ -53,6 +53,15 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by compiladorParser#inic.
+    def enterInic(self, ctx:compiladorParser.InicContext):
+        pass
+
+    # Exit a parse tree produced by compiladorParser#inic.
+    def exitInic(self, ctx:compiladorParser.InicContext):
+        pass
+
+
     # Enter a parse tree produced by compiladorParser#declaracion.
     def enterDeclaracion(self, ctx:compiladorParser.DeclaracionContext):
         pass
@@ -62,12 +71,12 @@ class compiladorListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by compiladorParser#listaDeclaradores.
-    def enterListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
+    # Enter a parse tree produced by compiladorParser#listavar.
+    def enterListavar(self, ctx:compiladorParser.ListavarContext):
         pass
 
-    # Exit a parse tree produced by compiladorParser#listaDeclaradores.
-    def exitListaDeclaradores(self, ctx:compiladorParser.ListaDeclaradoresContext):
+    # Exit a parse tree produced by compiladorParser#listavar.
+    def exitListavar(self, ctx:compiladorParser.ListavarContext):
         pass
 
 
@@ -77,15 +86,6 @@ class compiladorListener(ParseTreeListener):
 
     # Exit a parse tree produced by compiladorParser#listaOpal.
     def exitListaOpal(self, ctx:compiladorParser.ListaOpalContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#declarador.
-    def enterDeclarador(self, ctx:compiladorParser.DeclaradorContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#declarador.
-    def exitDeclarador(self, ctx:compiladorParser.DeclaradorContext):
         pass
 
 
@@ -167,15 +167,6 @@ class compiladorListener(ParseTreeListener):
 
     # Exit a parse tree produced by compiladorParser#expresionLogica.
     def exitExpresionLogica(self, ctx:compiladorParser.ExpresionLogicaContext):
-        pass
-
-
-    # Enter a parse tree produced by compiladorParser#logica.
-    def enterLogica(self, ctx:compiladorParser.LogicaContext):
-        pass
-
-    # Exit a parse tree produced by compiladorParser#logica.
-    def exitLogica(self, ctx:compiladorParser.LogicaContext):
         pass
 
 

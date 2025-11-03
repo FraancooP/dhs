@@ -41,6 +41,7 @@ WHILE : 'while' ;
 RETURN : 'return' ;
 
 // Literales
+NUMERO_CON_PUNTO : ('+' | '-')? DIGITO+ '.' DIGITO+ ;
 NUMERO : ('+' | '-')? DIGITO+ ;
 ID : (LETRA | '_')(LETRA | DIGITO | '_')* ;
 WS : [ \t\r\n] -> skip ;
@@ -72,17 +73,29 @@ tipo : INT
      | DOUBLE
      ;
 
-declaracion : tipo listaDeclaradores PYC ;
 
-listaDeclaradores : declarador (COMA declarador)* ;
+inic : ASIG opal
+     |
+     ;
+
+declaracion : tipo ID inic listavar PYC ;
+
+listavar : COMA ID inic listavar
+         |
+         ;
+
+
+//declaracion : tipo listaDeclaradores PYC ;
+
+//listaDeclaradores : declarador (COMA declarador)* ;
 
 listaOpal : opal (COMA opal)* ;
 
-declarador : ID
-           | ID ASIG opal
-           | ID CA NUMERO CC
-           | ID CA NUMERO CC ASIG LLA listaOpal LLC
-           ;
+//declarador : ID
+//           | ID ASIG opal
+//           | ID CA NUMERO CC
+//           | ID CA NUMERO CC ASIG LLA listaOpal LLC
+//           ;
 
 // ===== EXPRESIONES ARITMÉTICAS =====
 opal : exp ;
@@ -104,6 +117,7 @@ t : MULT factor t
 factor : PA exp PC
        | ID
        | ID CA opal CC
+       | NUMERO_CON_PUNTO
        | NUMERO
        | llamadaFuncion
        ;
@@ -120,12 +134,18 @@ asignacion : ID ASIG opal
            ;
 
            // ===== EXPRESIONES LÓGICAS =====
-expresionLogica : comparacion logica ;
+//expresionLogica : comparacion logica ;
+//Cambiamos aca porque no soportaba paréntesis
+expresionLogica : comparacion
+                | expresionLogica AND expresionLogica
+                | expresionLogica OR expresionLogica
+                | PA expresionLogica PC
+                ;
 
-logica : AND comparacion logica
-       | OR comparacion logica
-       |
-       ;
+//logica : AND comparacion logica
+//       | OR comparacion logica
+//       |
+//       ;
 
 
 listaAsignaciones : asignacion (COMA asignacion)* 
@@ -148,12 +168,13 @@ ielse : ELSE instruccion
 // For
 ifor : FOR PA forInit PYC expresionLogica PYC forInc PC bloque ;
 
-forInit : listaAsignaciones
-        |  
+forInit : tipo ID inic listavar
+        | listaAsignaciones 
+        |
         ;
 
 forInc : listaContadores
-       |  
+       |
        ;
 
 listaContadores : asignacion (COMA asignacion)*
@@ -175,11 +196,11 @@ retorno : RETURN opal PYC
 parametro : tipo ID ;
 
 parametros : parametro (COMA parametro)*
-           |                    
+           |
            ;
 
 argumentos : opal (COMA opal)*
-           |                    
+           |
            ;
 
 llamadaFuncionInstruccion : llamadaFuncion PYC;
